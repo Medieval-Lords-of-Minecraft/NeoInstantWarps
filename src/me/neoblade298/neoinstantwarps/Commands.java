@@ -33,7 +33,7 @@ public class Commands implements CommandExecutor{
 					sender.sendMessage("§4[§c§lMLMC§4] §cError: Player not found");
 				}
 			} catch (WarpNotFoundException e) {
-				sender.sendMessage("§4[§c§lMLMC§4] §cError: Warp not found");
+				sender.sendMessage("§4[§c§lMLMC§4] §cError: Warp " + args[0] + " not found");
 				e.printStackTrace();
 			} catch (InvalidWorldException e) {
 				sender.sendMessage("§4[§c§lMLMC§4] §cError: Invalid world");
